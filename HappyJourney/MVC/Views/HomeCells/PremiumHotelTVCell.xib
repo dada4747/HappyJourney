@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Bold.otf">
+            <string>Aeonik-Bold</string>
+        </array>
+        <array key="Aeonik-Medium.otf">
+            <string>Aeonik-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PremiumHotelTVCell" id="KGk-i7-Jjw" customClass="PremiumHotelTVCell" customModule="HappyJourney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8k-cC-niN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTRODUCING TRIPTO. PREMIUM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzi-j5-H5e">
+                                <rect key="frame" x="20" y="20" width="335" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="rld-Oz-O8u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="13"/>
+                                <color key="textColor" red="0.16078431372549018" green="0.20000000000000001" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 15" translatesAutoresizingMaskIntoConstraints="NO" id="pbN-hm-KBx" customClass="CRImageView" customModule="HappyJourney" customModuleProvider="target">
+                                <rect key="frame" x="20" y="55" width="335" height="115"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfT-Kk-Maf" customClass="CRView" customModule="HappyJourney" customModuleProvider="target">
+                                <rect key="frame" x="113" y="104" width="149" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPLORE HOTELS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoi-P3-b5R">
+                                        <rect key="frame" x="29.999999999999993" y="11.666666666666671" width="89.333333333333314" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="13" id="1L0-1i-cAH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="zoi-P3-b5R" firstAttribute="centerY" secondItem="xfT-Kk-Maf" secondAttribute="centerY" id="4p7-P6-R2K"/>
+                                    <constraint firstAttribute="height" constant="36" id="5Kj-Cb-urp"/>
+                                    <constraint firstAttribute="width" constant="149" id="dat-C0-2RO"/>
+                                    <constraint firstItem="zoi-P3-b5R" firstAttribute="centerX" secondItem="xfT-Kk-Maf" secondAttribute="centerX" id="el2-2F-csr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_premium" translatesAutoresizingMaskIntoConstraints="NO" id="NxC-yr-VQY">
+                                <rect key="frame" x="111" y="64" width="153" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152.78" id="YZ5-QP-9d4"/>
+                                    <constraint firstAttribute="height" constant="29.899999999999999" id="iDn-7b-Xjb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pbN-hm-KBx" firstAttribute="top" secondItem="wzi-j5-H5e" secondAttribute="bottom" constant="20" id="DLL-HK-vc7"/>
+                            <constraint firstItem="wzi-j5-H5e" firstAttribute="leading" secondItem="k8k-cC-niN" secondAttribute="leading" constant="20" id="LQ6-yR-Z2I"/>
+                            <constraint firstAttribute="bottom" secondItem="xfT-Kk-Maf" secondAttribute="bottom" constant="50" id="aQf-1a-VZX"/>
+                            <constraint firstItem="pbN-hm-KBx" firstAttribute="leading" secondItem="k8k-cC-niN" secondAttribute="leading" constant="20" id="ciD-Xx-DKb"/>
+                            <constraint firstAttribute="trailing" secondItem="wzi-j5-H5e" secondAttribute="trailing" constant="20" id="cjY-Bj-yeN"/>
+                            <constraint firstItem="wzi-j5-H5e" firstAttribute="top" secondItem="k8k-cC-niN" secondAttribute="top" constant="20" id="dTN-4y-Jy9"/>
+                            <constraint firstItem="xfT-Kk-Maf" firstAttribute="centerX" secondItem="k8k-cC-niN" secondAttribute="centerX" id="kUJ-EF-7dk"/>
+                            <constraint firstItem="xfT-Kk-Maf" firstAttribute="top" secondItem="NxC-yr-VQY" secondAttribute="bottom" constant="10" id="mvR-1h-G0U"/>
+                            <constraint firstAttribute="bottom" secondItem="pbN-hm-KBx" secondAttribute="bottom" constant="20" id="pIT-Wz-eOl"/>
+                            <constraint firstAttribute="trailing" secondItem="pbN-hm-KBx" secondAttribute="trailing" constant="20" id="pUx-QQ-tLH"/>
+                            <constraint firstItem="NxC-yr-VQY" firstAttribute="centerX" secondItem="k8k-cC-niN" secondAttribute="centerX" id="wxd-aV-d3x"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="k8k-cC-niN" secondAttribute="trailing" id="HDd-SG-bzR"/>
+                    <constraint firstItem="k8k-cC-niN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SNg-eN-6mM"/>
+                    <constraint firstItem="k8k-cC-niN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YZV-IH-Pq5"/>
+                    <constraint firstAttribute="bottom" secondItem="k8k-cC-niN" secondAttribute="bottom" constant="10" id="oK3-7t-P8x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="164.12213740458014" y="17.605633802816904"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 15" width="1340" height="536"/>
+        <image name="ic_premium" width="1222" height="238"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

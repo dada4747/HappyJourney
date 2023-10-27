@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Bold.otf">
+            <string>Aeonik-Bold</string>
+        </array>
+        <array key="Aeonik-Regular.otf">
+            <string>Aeonik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="DetailWebViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailWebViewCell" rowHeight="108" id="KGk-i7-Jjw" customClass="DetailWebViewCell" customModule="HappyJourney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="CardView" customModule="HappyJourney" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <wkWebView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pns-eY-s1E">
+                        <rect key="frame" x="0.0" y="40" width="320" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="B62-Pm-rhk"/>
+                        </constraints>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qzf-w1-Yyu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXU-Of-6jE">
+                                <rect key="frame" x="10" y="10" width="80" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="RfO-Jb-YFK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bankok" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gW-rB-Tha">
+                                <rect key="frame" x="100" y="10" width="210" height="20"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79541318449999998" green="0.79820901710000003" blue="0.80659651519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="6gW-PG-rmG"/>
+                            <constraint firstAttribute="bottom" secondItem="mXU-Of-6jE" secondAttribute="bottom" constant="8" id="9nt-RY-KK6"/>
+                            <constraint firstItem="5gW-rB-Tha" firstAttribute="leading" secondItem="mXU-Of-6jE" secondAttribute="trailing" constant="10" id="Ip4-mI-0fu"/>
+                            <constraint firstAttribute="trailing" secondItem="5gW-rB-Tha" secondAttribute="trailing" constant="10" id="bok-n5-MX9"/>
+                            <constraint firstItem="mXU-Of-6jE" firstAttribute="leading" secondItem="Qzf-w1-Yyu" secondAttribute="leading" constant="10" id="itF-3q-cWf"/>
+                            <constraint firstItem="mXU-Of-6jE" firstAttribute="top" secondItem="Qzf-w1-Yyu" secondAttribute="top" constant="10" id="jeD-i6-DJe"/>
+                            <constraint firstAttribute="bottom" secondItem="5gW-rB-Tha" secondAttribute="bottom" constant="10" id="tD1-aG-nUo"/>
+                            <constraint firstItem="5gW-rB-Tha" firstAttribute="top" secondItem="Qzf-w1-Yyu" secondAttribute="top" constant="10" id="ys4-AM-3Ep"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qzf-w1-Yyu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Fu9-tP-B86"/>
+                    <constraint firstItem="Qzf-w1-Yyu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GMH-zE-RD0"/>
+                    <constraint firstItem="Pns-eY-s1E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Uiw-Um-SzB"/>
+                    <constraint firstItem="Pns-eY-s1E" firstAttribute="top" secondItem="Qzf-w1-Yyu" secondAttribute="bottom" id="hx7-ZL-vMw"/>
+                    <constraint firstAttribute="trailing" secondItem="Pns-eY-s1E" secondAttribute="trailing" id="jtF-Jz-hUi"/>
+                    <constraint firstAttribute="bottom" secondItem="Pns-eY-s1E" secondAttribute="bottom" id="tV3-Tm-GB3"/>
+                    <constraint firstAttribute="trailing" secondItem="Qzf-w1-Yyu" secondAttribute="trailing" id="w34-36-DSB"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="5"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                        <integer key="value" value="1"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lbl_Day" destination="mXU-Of-6jE" id="xYh-0D-wJk"/>
+                <outlet property="lbl_name" destination="5gW-rB-Tha" id="8QU-ey-YHf"/>
+                <outlet property="wbView_Details" destination="Pns-eY-s1E" id="Df6-11-02L"/>
+                <outlet property="wb_height" destination="B62-Pm-rhk" id="wHs-TJ-oRz"/>
+            </connections>
+            <point key="canvasLocation" x="50.724637681159422" y="72.321428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

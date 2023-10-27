@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Bold.otf">
+            <string>Aeonik-Bold</string>
+        </array>
+        <array key="Aeonik-Medium.otf">
+            <string>Aeonik-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBookingCell" id="KGk-i7-Jjw" customClass="FBookingCell" customModule="HappyJourney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0PW-Uu-7rz" customClass="CardView" customModule="HappyJourney" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="310" height="190"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1KC-kI-JBo">
+                                <rect key="frame" x="10" y="0.0" width="290" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAY TO DUBAI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXz-FL-3v2">
+                                        <rect key="frame" x="0.0" y="7.5" width="145" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="ykv-bg-ZQf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik-Bold" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ref ID: 12345678" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-58-Ezd">
+                                        <rect key="frame" x="150" y="7.5" width="140" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Pvr-3y-AfX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="WXz-FL-3v2" firstAttribute="width" secondItem="1KC-kI-JBo" secondAttribute="width" multiplier="0.5" id="4GF-Sc-g4a"/>
+                                    <constraint firstItem="Twn-58-Ezd" firstAttribute="leading" secondItem="WXz-FL-3v2" secondAttribute="trailing" constant="5" id="7hY-OC-Lyj"/>
+                                    <constraint firstItem="Twn-58-Ezd" firstAttribute="centerY" secondItem="1KC-kI-JBo" secondAttribute="centerY" id="MnR-FN-JZW"/>
+                                    <constraint firstAttribute="height" constant="40" id="Wec-RT-LZc"/>
+                                    <constraint firstAttribute="trailing" secondItem="Twn-58-Ezd" secondAttribute="trailing" id="pjc-VQ-lod"/>
+                                    <constraint firstItem="WXz-FL-3v2" firstAttribute="centerY" secondItem="1KC-kI-JBo" secondAttribute="centerY" id="s8U-QE-TEo"/>
+                                    <constraint firstItem="WXz-FL-3v2" firstAttribute="leading" secondItem="1KC-kI-JBo" secondAttribute="leading" id="uKp-Wb-8Fo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5t-dH-MrR">
+                                <rect key="frame" x="10" y="40" width="290" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="yPt-6j-kX2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4E-6S-2Bb">
+                                <rect key="frame" x="10" y="50" width="290" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Confirmed" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPS-Nz-4Zj">
+                                        <rect key="frame" x="159.5" y="0.0" width="130.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="XEw-8U-RsL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue, 02-Feb 06:55 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uit-Qp-y36">
+                                        <rect key="frame" x="0.0" y="0.0" width="159.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Drm-Ar-mGx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSC-dR-ZE5" customClass="CRView" customModule="HappyJourney" customModuleProvider="target">
+                                        <rect key="frame" x="210" y="35" width="80" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One-way" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIp-ky-dXB">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                                                <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.29594123363494873" green="0.82938462495803833" blue="0.9118162989616394" alpha="0.30008561643835618" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="wIp-ky-dXB" secondAttribute="bottom" id="CNW-ke-TR1"/>
+                                            <constraint firstItem="wIp-ky-dXB" firstAttribute="top" secondItem="MSC-dR-ZE5" secondAttribute="top" id="NLL-cH-VZm"/>
+                                            <constraint firstAttribute="height" constant="30" id="THz-he-LKa"/>
+                                            <constraint firstItem="wIp-ky-dXB" firstAttribute="leading" secondItem="MSC-dR-ZE5" secondAttribute="leading" id="ZaR-Qi-A0G"/>
+                                            <constraint firstAttribute="width" constant="80" id="lbL-IO-a18"/>
+                                            <constraint firstAttribute="trailing" secondItem="wIp-ky-dXB" secondAttribute="trailing" id="rg1-Ym-Dlm"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lead Pax: Mr. Venugopal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2U5-wl-sqm">
+                                        <rect key="frame" x="0.0" y="25" width="154.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Blp-FD-J4u"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booked On: 27 Jan 2021" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emk-jt-7tf">
+                                        <rect key="frame" x="0.0" y="50" width="154.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="kdP-uw-bzj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="2U5-wl-sqm" firstAttribute="top" secondItem="Uit-Qp-y36" secondAttribute="bottom" id="3ZW-l4-29Q"/>
+                                    <constraint firstItem="Uit-Qp-y36" firstAttribute="top" secondItem="a4E-6S-2Bb" secondAttribute="top" id="B08-Vg-aGN"/>
+                                    <constraint firstItem="UPS-Nz-4Zj" firstAttribute="leading" secondItem="Uit-Qp-y36" secondAttribute="trailing" id="CeZ-re-tnM"/>
+                                    <constraint firstItem="MSC-dR-ZE5" firstAttribute="top" secondItem="UPS-Nz-4Zj" secondAttribute="bottom" constant="10" id="HEe-bq-hwL"/>
+                                    <constraint firstAttribute="trailing" secondItem="UPS-Nz-4Zj" secondAttribute="trailing" id="IA6-8y-3Eh"/>
+                                    <constraint firstItem="Uit-Qp-y36" firstAttribute="leading" secondItem="a4E-6S-2Bb" secondAttribute="leading" id="Tpj-da-0tQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="MSC-dR-ZE5" secondAttribute="trailing" id="Vwp-XI-uZX"/>
+                                    <constraint firstItem="2U5-wl-sqm" firstAttribute="leading" secondItem="a4E-6S-2Bb" secondAttribute="leading" id="Z3v-7b-6B5"/>
+                                    <constraint firstItem="emk-jt-7tf" firstAttribute="leading" secondItem="a4E-6S-2Bb" secondAttribute="leading" id="bbB-sc-PlQ"/>
+                                    <constraint firstItem="emk-jt-7tf" firstAttribute="top" secondItem="2U5-wl-sqm" secondAttribute="bottom" id="bxo-2a-Gqv"/>
+                                    <constraint firstItem="UPS-Nz-4Zj" firstAttribute="width" secondItem="a4E-6S-2Bb" secondAttribute="width" multiplier="0.45" id="cnq-pw-6Oc"/>
+                                    <constraint firstItem="UPS-Nz-4Zj" firstAttribute="leading" secondItem="2U5-wl-sqm" secondAttribute="trailing" constant="5" id="cs3-68-5EK"/>
+                                    <constraint firstItem="UPS-Nz-4Zj" firstAttribute="leading" secondItem="emk-jt-7tf" secondAttribute="trailing" constant="5" id="nmO-PI-xyi"/>
+                                    <constraint firstAttribute="height" constant="80" id="uKk-Vm-hRe"/>
+                                    <constraint firstItem="UPS-Nz-4Zj" firstAttribute="top" secondItem="a4E-6S-2Bb" secondAttribute="top" id="v33-1o-4lN"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dII-46-7vm">
+                                <rect key="frame" x="10" y="135" width="290" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="iYx-sv-FIL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jid-Su-qRp">
+                                <rect key="frame" x="10" y="145" width="290" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfS-9Z-UMX" customClass="GradientButton" customModule="HappyJourney" customModuleProvider="target">
+                                        <rect key="frame" x="230" y="5" width="60" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.4423641562461853" blue="0.74846607446670532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="1NR-tt-7AC"/>
+                                            <constraint firstAttribute="width" constant="60" id="nXN-hq-pZh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="14"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                                <point key="value" x="0.0" y="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                                <point key="value" x="1" y="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuY-PV-gLD" userLabel="btn voucher" customClass="GradientButton" customModule="HappyJourney" customModuleProvider="target">
+                                        <rect key="frame" x="140" y="5" width="80" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.44236415620000002" blue="0.74846607450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="23A-Br-Sfx"/>
+                                            <constraint firstAttribute="width" constant="80" id="R7N-YM-fZB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="14"/>
+                                        <state key="normal" title="Voucher">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                                <point key="value" x="0.0" y="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                                <point key="value" x="1" y="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwR-vl-1eA">
+                                        <rect key="frame" x="0.0" y="0.0" width="28" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="N2F-cw-LCf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 509.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNM-sK-EkA">
+                                        <rect key="frame" x="0.0" y="20" width="130" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="RTd-1Z-9Yr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik-Bold" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="lNM-sK-EkA" firstAttribute="top" secondItem="hwR-vl-1eA" secondAttribute="bottom" id="1tV-35-lMl"/>
+                                    <constraint firstAttribute="trailing" secondItem="UfS-9Z-UMX" secondAttribute="trailing" id="7hZ-Mk-Q69"/>
+                                    <constraint firstItem="hwR-vl-1eA" firstAttribute="leading" secondItem="jid-Su-qRp" secondAttribute="leading" id="8S2-Sm-SuE"/>
+                                    <constraint firstItem="hwR-vl-1eA" firstAttribute="top" secondItem="jid-Su-qRp" secondAttribute="top" id="Be5-uj-gsQ"/>
+                                    <constraint firstItem="BuY-PV-gLD" firstAttribute="leading" secondItem="lNM-sK-EkA" secondAttribute="trailing" constant="10" id="JH3-zt-Y30"/>
+                                    <constraint firstItem="BuY-PV-gLD" firstAttribute="centerY" secondItem="jid-Su-qRp" secondAttribute="centerY" id="XP7-x1-CQB"/>
+                                    <constraint firstItem="lNM-sK-EkA" firstAttribute="leading" secondItem="jid-Su-qRp" secondAttribute="leading" id="YCy-ra-hKo"/>
+                                    <constraint firstItem="UfS-9Z-UMX" firstAttribute="leading" secondItem="BuY-PV-gLD" secondAttribute="trailing" constant="10" id="dzq-jY-679"/>
+                                    <constraint firstItem="UfS-9Z-UMX" firstAttribute="centerY" secondItem="jid-Su-qRp" secondAttribute="centerY" id="eNI-QZ-ZbA"/>
+                                    <constraint firstAttribute="bottom" secondItem="lNM-sK-EkA" secondAttribute="bottom" id="t1o-ch-27i"/>
+                                    <constraint firstAttribute="height" constant="40" id="wpQ-0C-Yed"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b5t-dH-MrR" firstAttribute="top" secondItem="1KC-kI-JBo" secondAttribute="bottom" id="2vg-QE-HAf"/>
+                            <constraint firstItem="1KC-kI-JBo" firstAttribute="top" secondItem="0PW-Uu-7rz" secondAttribute="top" id="43n-KW-YmH"/>
+                            <constraint firstItem="jid-Su-qRp" firstAttribute="top" secondItem="dII-46-7vm" secondAttribute="bottom" constant="5" id="4Zp-og-hZ8"/>
+                            <constraint firstItem="1KC-kI-JBo" firstAttribute="leading" secondItem="0PW-Uu-7rz" secondAttribute="leading" constant="10" id="Ege-9P-Tgh"/>
+                            <constraint firstItem="a4E-6S-2Bb" firstAttribute="top" secondItem="b5t-dH-MrR" secondAttribute="bottom" constant="5" id="Hmw-QY-gm7"/>
+                            <constraint firstItem="b5t-dH-MrR" firstAttribute="leading" secondItem="0PW-Uu-7rz" secondAttribute="leading" constant="10" id="Lcx-ZE-E5c"/>
+                            <constraint firstItem="a4E-6S-2Bb" firstAttribute="leading" secondItem="0PW-Uu-7rz" secondAttribute="leading" constant="10" id="LpB-aB-WJX"/>
+                            <constraint firstAttribute="trailing" secondItem="1KC-kI-JBo" secondAttribute="trailing" constant="10" id="N0H-I9-adJ"/>
+                            <constraint firstItem="dII-46-7vm" firstAttribute="top" secondItem="a4E-6S-2Bb" secondAttribute="bottom" constant="5" id="VLb-9x-oqo"/>
+                            <constraint firstItem="jid-Su-qRp" firstAttribute="leading" secondItem="0PW-Uu-7rz" secondAttribute="leading" constant="10" id="ieO-qS-azd"/>
+                            <constraint firstAttribute="trailing" secondItem="dII-46-7vm" secondAttribute="trailing" constant="10" id="ivU-0m-sfF"/>
+                            <constraint firstAttribute="trailing" secondItem="a4E-6S-2Bb" secondAttribute="trailing" constant="10" id="niM-LM-X0k"/>
+                            <constraint firstAttribute="trailing" secondItem="jid-Su-qRp" secondAttribute="trailing" constant="10" id="oxB-vX-DHk"/>
+                            <constraint firstItem="dII-46-7vm" firstAttribute="leading" secondItem="0PW-Uu-7rz" secondAttribute="leading" constant="10" id="sau-bE-4bI"/>
+                            <constraint firstAttribute="trailing" secondItem="b5t-dH-MrR" secondAttribute="trailing" constant="10" id="uXV-Fh-7WX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0PW-Uu-7rz" secondAttribute="trailing" constant="5" id="Hgj-iw-dny"/>
+                    <constraint firstItem="0PW-Uu-7rz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="bBD-yy-Osx"/>
+                    <constraint firstItem="0PW-Uu-7rz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="l0J-ev-l0j"/>
+                    <constraint firstAttribute="bottom" secondItem="0PW-Uu-7rz" secondAttribute="bottom" constant="5" id="ldb-Ju-8Fh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btn_cancel" destination="UfS-9Z-UMX" id="Nl1-aH-iC8"/>
+                <outlet property="btn_voucher" destination="BuY-PV-gLD" id="tie-4a-wiV"/>
+                <outlet property="lbl_arrivalCity" destination="WXz-FL-3v2" id="Xak-rQ-QRk"/>
+                <outlet property="lbl_bookingDate" destination="emk-jt-7tf" id="iec-AQ-XbJ"/>
+                <outlet property="lbl_bookingStatus" destination="UPS-Nz-4Zj" id="MKS-g1-eqz"/>
+                <outlet property="lbl_journeyDate" destination="Uit-Qp-y36" id="oTK-Ib-0Tw"/>
+                <outlet property="lbl_leadName" destination="2U5-wl-sqm" id="LD1-dn-p6K"/>
+                <outlet property="lbl_price" destination="lNM-sK-EkA" id="Duc-nM-Fxl"/>
+                <outlet property="lbl_refID" destination="Twn-58-Ezd" id="lrI-AB-yV3"/>
+                <outlet property="lbl_tripType" destination="wIp-ky-dXB" id="ydf-F3-uyz"/>
+            </connections>
+            <point key="canvasLocation" x="138.75" y="94.014084507042256"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="BuY-PV-gLD">
+            <size key="intrinsicContentSize" width="54" height="29"/>
+        </designable>
+        <designable name="UfS-9Z-UMX">
+            <size key="intrinsicContentSize" width="45" height="29"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

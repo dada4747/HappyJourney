@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Medium.otf">
+            <string>Aeonik-Medium</string>
+        </array>
+        <array key="Aeonik-Regular.otf">
+            <string>Aeonik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PayOnPickUpCell" id="KGk-i7-Jjw" customClass="PayOnPickUpCell" customModule="HappyJourney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lg0-Aa-ucn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPS (Global Positioning System)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yau-R3-g0T">
+                                <rect key="frame" x="10" y="3" width="187.66666666666666" height="34"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UR5-dr-P9W">
+                                <rect key="frame" x="202.66666666666666" y="3" width="107.33333333333334" height="34"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UR5-dr-P9W" firstAttribute="width" secondItem="yau-R3-g0T" secondAttribute="width" constant="-80" id="4sU-1L-acZ"/>
+                            <constraint firstItem="yau-R3-g0T" firstAttribute="top" secondItem="lg0-Aa-ucn" secondAttribute="top" constant="3" id="Kcr-GJ-rjW"/>
+                            <constraint firstItem="UR5-dr-P9W" firstAttribute="leading" secondItem="yau-R3-g0T" secondAttribute="trailing" constant="5" id="LWX-s1-vLg"/>
+                            <constraint firstItem="UR5-dr-P9W" firstAttribute="bottom" secondItem="yau-R3-g0T" secondAttribute="bottom" id="Nz9-lp-Hem"/>
+                            <constraint firstAttribute="height" constant="40" id="Xbt-bn-7hE"/>
+                            <constraint firstItem="UR5-dr-P9W" firstAttribute="top" secondItem="yau-R3-g0T" secondAttribute="top" id="Xx6-eM-NrA"/>
+                            <constraint firstAttribute="bottom" secondItem="yau-R3-g0T" secondAttribute="bottom" constant="3" id="g3S-EB-bfc"/>
+                            <constraint firstItem="yau-R3-g0T" firstAttribute="leading" secondItem="lg0-Aa-ucn" secondAttribute="leading" constant="10" id="i16-Lk-Ip0"/>
+                            <constraint firstAttribute="trailing" secondItem="UR5-dr-P9W" secondAttribute="trailing" constant="10" id="qZk-mf-89X"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lg0-Aa-ucn" secondAttribute="trailing" id="125-H5-no6"/>
+                    <constraint firstItem="lg0-Aa-ucn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9Vn-Ty-DPg"/>
+                    <constraint firstItem="lg0-Aa-ucn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pRI-7O-OLx"/>
+                    <constraint firstAttribute="bottom" secondItem="lg0-Aa-ucn" secondAttribute="bottom" id="wa3-gW-trI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="lbl_price" destination="UR5-dr-P9W" id="Jiq-zA-TuR"/>
+                <outlet property="lbl_title" destination="yau-R3-g0T" id="0AX-vf-6wZ"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="113"/>
+        </tableViewCell>
+    </objects>
+</document>

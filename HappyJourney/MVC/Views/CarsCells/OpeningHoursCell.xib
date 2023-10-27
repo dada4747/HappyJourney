@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Regular.otf">
+            <string>Aeonik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OpeningHoursCell" id="KGk-i7-Jjw" customClass="OpeningHoursCell" customModule="HappyJourney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="30.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rgn-Fz-0xq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pincode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNU-JX-j2s">
+                                <rect key="frame" x="10" y="5" width="145" height="20.666666666666668"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pincode" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kb0-Bl-ljc">
+                                <rect key="frame" x="165" y="5" width="145" height="20.666666666666668"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="HpY-HG-jdO"/>
+                            <constraint firstAttribute="bottom" secondItem="kb0-Bl-ljc" secondAttribute="bottom" constant="4.5" id="bnY-bi-yTP"/>
+                            <constraint firstItem="kNU-JX-j2s" firstAttribute="leading" secondItem="Rgn-Fz-0xq" secondAttribute="leading" constant="10" id="cAI-Ir-I9G"/>
+                            <constraint firstAttribute="trailing" secondItem="kb0-Bl-ljc" secondAttribute="trailing" constant="10" id="f4l-ik-kj7"/>
+                            <constraint firstItem="kNU-JX-j2s" firstAttribute="top" secondItem="Rgn-Fz-0xq" secondAttribute="top" constant="5" id="haj-Ca-x48"/>
+                            <constraint firstItem="kb0-Bl-ljc" firstAttribute="width" secondItem="kNU-JX-j2s" secondAttribute="width" id="mX6-pk-ufI"/>
+                            <constraint firstItem="kb0-Bl-ljc" firstAttribute="leading" secondItem="kNU-JX-j2s" secondAttribute="trailing" constant="10" id="pZ6-NW-ZlM"/>
+                            <constraint firstAttribute="bottom" secondItem="kNU-JX-j2s" secondAttribute="bottom" constant="4.5" id="qT4-ag-Sof"/>
+                            <constraint firstItem="kb0-Bl-ljc" firstAttribute="top" secondItem="Rgn-Fz-0xq" secondAttribute="top" constant="5" id="vlx-4p-hrU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rgn-Fz-0xq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KwX-uT-jbH"/>
+                    <constraint firstAttribute="bottom" secondItem="Rgn-Fz-0xq" secondAttribute="bottom" id="PC5-bz-zNL"/>
+                    <constraint firstAttribute="trailing" secondItem="Rgn-Fz-0xq" secondAttribute="trailing" id="Unu-L2-zer"/>
+                    <constraint firstItem="Rgn-Fz-0xq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="amb-Ux-N5A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="lbl_drop_openingHrs" destination="kb0-Bl-ljc" id="SQ5-B3-tuv"/>
+                <outlet property="lbl_pick_openingHrs" destination="kNU-JX-j2s" id="KH8-CO-swE"/>
+            </connections>
+            <point key="canvasLocation" x="-19" y="147"/>
+        </tableViewCell>
+    </objects>
+</document>

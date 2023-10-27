@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Medium.otf">
+            <string>Aeonik-Medium</string>
+        </array>
+        <array key="Aeonik-Bold.otf">
+            <string>Aeonik-Bold</string>
+        </array>
+        <array key="Aeonik-Medium.otf">
+            <string>Aeonik-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransferBookingTVCell" rowHeight="164" id="KGk-i7-Jjw" customClass="TransferBookingTVCell" customModule="HappyJourney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwW-Kk-874" userLabel="MainView" customClass="CRView" customModule="HappyJourney" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="357" height="154"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baE-Mr-O1Y" userLabel="View1">
+                                <rect key="frame" x="0.0" y="0.0" width="357" height="55"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fej-lk-NjV">
+                                        <rect key="frame" x="0.0" y="0.0" width="178.5" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfB-j4-eze">
+                                                <rect key="frame" x="5" y="10" width="168.5" height="12"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="sUa-yG-Gf8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMM dd-yyyy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="UvO-8y-xRU">
+                                                <rect key="frame" x="5" y="27" width="173.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="Rke-50-HKe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="13"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="OfB-j4-eze" secondAttribute="trailing" constant="5" id="0NS-iP-sOA"/>
+                                            <constraint firstItem="OfB-j4-eze" firstAttribute="leading" secondItem="fej-lk-NjV" secondAttribute="leading" constant="5" id="4BW-Ow-arW"/>
+                                            <constraint firstAttribute="trailing" secondItem="UvO-8y-xRU" secondAttribute="trailing" id="EMd-F9-aY7"/>
+                                            <constraint firstItem="UvO-8y-xRU" firstAttribute="top" secondItem="OfB-j4-eze" secondAttribute="bottom" constant="5" id="Opr-cQ-nwZ"/>
+                                            <constraint firstItem="OfB-j4-eze" firstAttribute="top" secondItem="fej-lk-NjV" secondAttribute="top" constant="10" id="PxU-AD-r0Z"/>
+                                            <constraint firstItem="UvO-8y-xRU" firstAttribute="leading" secondItem="fej-lk-NjV" secondAttribute="leading" constant="5" id="rKC-2Z-KLB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5va-US-wY5">
+                                        <rect key="frame" x="179" y="0.0" width="173" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ek-Pf-MR9">
+                                                <rect key="frame" x="4" y="10" width="159" height="12"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="2QG-X8-lyZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml0-DQ-KPs">
+                                                <rect key="frame" x="4" y="27" width="159" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="XmQ-Nd-oEX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="9ek-Pf-MR9" firstAttribute="top" secondItem="5va-US-wY5" secondAttribute="top" constant="10" id="92o-NN-bbn"/>
+                                            <constraint firstItem="ml0-DQ-KPs" firstAttribute="top" secondItem="9ek-Pf-MR9" secondAttribute="bottom" constant="5" id="JFu-e9-Vv6"/>
+                                            <constraint firstItem="9ek-Pf-MR9" firstAttribute="leading" secondItem="5va-US-wY5" secondAttribute="leading" constant="4" id="Naw-IF-9qM"/>
+                                            <constraint firstAttribute="trailing" secondItem="ml0-DQ-KPs" secondAttribute="trailing" constant="10" id="gd5-uT-Xao"/>
+                                            <constraint firstAttribute="bottom" secondItem="ml0-DQ-KPs" secondAttribute="bottom" constant="11" id="ilb-Lz-QfQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="9ek-Pf-MR9" secondAttribute="trailing" constant="10" id="kEW-xy-kOD"/>
+                                            <constraint firstItem="ml0-DQ-KPs" firstAttribute="leading" secondItem="5va-US-wY5" secondAttribute="leading" constant="4" id="yJj-CM-gI4"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvl-KX-jdy" userLabel="Line">
+                                        <rect key="frame" x="10" y="54" width="337" height="1"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="26M-QU-baD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5va-US-wY5" secondAttribute="bottom" id="4fe-ay-Lvu"/>
+                                    <constraint firstItem="5va-US-wY5" firstAttribute="leading" secondItem="fej-lk-NjV" secondAttribute="trailing" constant="0.5" id="LyK-tT-IkO"/>
+                                    <constraint firstAttribute="height" constant="55" id="N67-1o-lpl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mvl-KX-jdy" secondAttribute="trailing" constant="10" id="N8d-lY-9tO"/>
+                                    <constraint firstItem="fej-lk-NjV" firstAttribute="width" secondItem="baE-Mr-O1Y" secondAttribute="width" multiplier="0.5" id="PUj-fZ-D0x"/>
+                                    <constraint firstItem="fej-lk-NjV" firstAttribute="leading" secondItem="baE-Mr-O1Y" secondAttribute="leading" id="Tum-Me-yQd"/>
+                                    <constraint firstItem="fej-lk-NjV" firstAttribute="top" secondItem="baE-Mr-O1Y" secondAttribute="top" id="Y1U-kz-gH0"/>
+                                    <constraint firstAttribute="bottom" secondItem="fej-lk-NjV" secondAttribute="bottom" id="aGh-Oe-zil"/>
+                                    <constraint firstItem="Mvl-KX-jdy" firstAttribute="leading" secondItem="baE-Mr-O1Y" secondAttribute="leading" constant="10" id="hsh-RW-vLP"/>
+                                    <constraint firstAttribute="trailing" secondItem="5va-US-wY5" secondAttribute="trailing" constant="5" id="lVz-8E-KAI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mvl-KX-jdy" secondAttribute="bottom" id="qfM-JL-qHW"/>
+                                    <constraint firstItem="5va-US-wY5" firstAttribute="top" secondItem="baE-Mr-O1Y" secondAttribute="top" id="sGC-TN-rD2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2m-uQ-JP2" userLabel="View2">
+                                <rect key="frame" x="0.0" y="60" width="357" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maruthi 800" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDQ-e0-NIo">
+                                        <rect key="frame" x="10" y="0.0" width="267" height="44"/>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik-Bold" pointSize="13"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AED 23111.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xV-B0-glO">
+                                        <rect key="frame" x="265" y="0.0" width="82" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="QDj-C8-CRa"/>
+                                            <constraint firstAttribute="height" constant="25" id="sDE-LI-tvB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik-Bold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8xV-B0-glO" secondAttribute="trailing" constant="10" id="5Vk-M5-jJx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Av3-OX-pQ9"/>
+                                    <constraint firstItem="YDQ-e0-NIo" firstAttribute="leading" secondItem="T2m-uQ-JP2" secondAttribute="leading" constant="10" id="KWn-1a-TMD"/>
+                                    <constraint firstAttribute="trailing" secondItem="YDQ-e0-NIo" secondAttribute="trailing" constant="80" id="Vye-4o-eCy"/>
+                                    <constraint firstAttribute="bottom" secondItem="YDQ-e0-NIo" secondAttribute="bottom" constant="5" id="frH-Ow-sgo"/>
+                                    <constraint firstItem="8xV-B0-glO" firstAttribute="top" secondItem="T2m-uQ-JP2" secondAttribute="top" id="ixB-so-okE"/>
+                                    <constraint firstItem="YDQ-e0-NIo" firstAttribute="top" secondItem="T2m-uQ-JP2" secondAttribute="top" id="yHF-rM-R2T"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhv-C5-cwR" userLabel="View3">
+                                <rect key="frame" x="0.0" y="109" width="357" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bE-QM-1gQ" customClass="GradientButton" customModule="HappyJourney" customModuleProvider="target">
+                                        <rect key="frame" x="292" y="7.5" width="60" height="30"/>
+                                        <color key="backgroundColor" red="0.76470588240000004" green="0.21176470589999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="KGg-0t-toG"/>
+                                            <constraint firstAttribute="width" constant="60" id="SbX-WR-Kl9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="14"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                                <point key="value" x="0.0" y="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                                <point key="value" x="1" y="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAT-g3-ELB" userLabel="btn voucher" customClass="GradientButton" customModule="HappyJourney" customModuleProvider="target">
+                                        <rect key="frame" x="202" y="7.5" width="80" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.44236415620000002" blue="0.74846607450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="44c-p3-UMi"/>
+                                            <constraint firstAttribute="height" constant="30" id="I4G-7S-Ufg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik-Medium" pointSize="14"/>
+                                        <state key="normal" title="Voucher">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                                <point key="value" x="0.0" y="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                                <point key="value" x="1" y="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOKING_CONFIRMED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkm-VP-m5W">
+                                        <rect key="frame" x="10" y="10" width="182" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="0c6-W2-GwY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aeonik-Bold" family="Aeonik-Bold" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tkm-VP-m5W" firstAttribute="centerY" secondItem="hhv-C5-cwR" secondAttribute="centerY" id="0QH-qd-Y4d"/>
+                                    <constraint firstItem="0bE-QM-1gQ" firstAttribute="centerY" secondItem="hhv-C5-cwR" secondAttribute="centerY" id="5hj-3f-rXa"/>
+                                    <constraint firstItem="tkm-VP-m5W" firstAttribute="leading" secondItem="hhv-C5-cwR" secondAttribute="leading" constant="10" id="99D-fp-NU0"/>
+                                    <constraint firstAttribute="height" constant="45" id="AU9-rn-3lu"/>
+                                    <constraint firstItem="0bE-QM-1gQ" firstAttribute="leading" secondItem="xAT-g3-ELB" secondAttribute="trailing" constant="10" id="ItK-gs-gcD"/>
+                                    <constraint firstItem="xAT-g3-ELB" firstAttribute="leading" secondItem="tkm-VP-m5W" secondAttribute="trailing" constant="10" id="PbP-AW-TlE"/>
+                                    <constraint firstItem="xAT-g3-ELB" firstAttribute="centerY" secondItem="hhv-C5-cwR" secondAttribute="centerY" id="dG1-M6-bj0"/>
+                                    <constraint firstAttribute="trailing" secondItem="0bE-QM-1gQ" secondAttribute="trailing" constant="5" id="mUk-d7-FxZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hhv-C5-cwR" firstAttribute="bottom" secondItem="qwW-Kk-874" secondAttribute="bottom" id="2KB-3x-iAI"/>
+                            <constraint firstItem="hhv-C5-cwR" firstAttribute="leading" secondItem="qwW-Kk-874" secondAttribute="leading" id="CId-v9-SVi"/>
+                            <constraint firstAttribute="trailing" secondItem="hhv-C5-cwR" secondAttribute="trailing" id="J4K-bd-OpQ"/>
+                            <constraint firstItem="T2m-uQ-JP2" firstAttribute="leading" secondItem="qwW-Kk-874" secondAttribute="leading" id="Qja-64-O6R"/>
+                            <constraint firstAttribute="trailing" secondItem="T2m-uQ-JP2" secondAttribute="trailing" id="VkD-5p-4lf"/>
+                            <constraint firstItem="T2m-uQ-JP2" firstAttribute="top" secondItem="baE-Mr-O1Y" secondAttribute="bottom" constant="5" id="WVN-6K-Kta"/>
+                            <constraint firstAttribute="trailing" secondItem="baE-Mr-O1Y" secondAttribute="trailing" id="Wmk-8i-Ka3"/>
+                            <constraint firstItem="baE-Mr-O1Y" firstAttribute="leading" secondItem="qwW-Kk-874" secondAttribute="leading" id="aYX-cQ-GMP"/>
+                            <constraint firstItem="baE-Mr-O1Y" firstAttribute="top" secondItem="qwW-Kk-874" secondAttribute="top" id="ina-bw-bQy"/>
+                            <constraint firstItem="hhv-C5-cwR" firstAttribute="top" secondItem="T2m-uQ-JP2" secondAttribute="bottom" id="tU0-9Y-tNI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qwW-Kk-874" secondAttribute="trailing" constant="5" id="70j-SA-DaO"/>
+                    <constraint firstItem="qwW-Kk-874" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="QTh-OC-9KA"/>
+                    <constraint firstAttribute="bottom" secondItem="qwW-Kk-874" secondAttribute="bottom" constant="5" id="Uyc-LG-AQc"/>
+                    <constraint firstItem="qwW-Kk-874" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="XsH-50-FgE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btn_cancel" destination="0bE-QM-1gQ" id="7Dw-7C-dJR"/>
+                <outlet property="btn_voucher" destination="xAT-g3-ELB" id="LgU-gS-Yn2"/>
+                <outlet property="lbl_bookingDate" destination="UvO-8y-xRU" id="gas-pj-e6a"/>
+                <outlet property="lbl_bookingID" destination="ml0-DQ-KPs" id="Pld-0U-Prg"/>
+                <outlet property="lbl_price" destination="8xV-B0-glO" id="G2u-50-Veh"/>
+                <outlet property="lbl_status" destination="tkm-VP-m5W" id="BhM-s3-1nQ"/>
+                <outlet property="lbl_title" destination="YDQ-e0-NIo" id="Ian-FP-sQx"/>
+            </connections>
+            <point key="canvasLocation" x="-21.014492753623191" y="119.86607142857142"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="0bE-QM-1gQ">
+            <size key="intrinsicContentSize" width="44" height="29"/>
+        </designable>
+        <designable name="xAT-g3-ELB">
+            <size key="intrinsicContentSize" width="54" height="29"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

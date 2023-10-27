@@ -2,17 +2,21 @@ PODS:
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
+  - WARangeSlider (1.1.1)
 
 DEPENDENCIES:
   - SDWebImage
+  - WARangeSlider
 
 SPEC REPOS:
   trunk:
     - SDWebImage
+    - WARangeSlider
 
 SPEC CHECKSUMS:
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  WARangeSlider: 54b3e0853b8d16c444fd539005901aecee86837d
 
-PODFILE CHECKSUM: c6c15e60b7a8e3733eba51788d508603b67074a0
+PODFILE CHECKSUM: e2691c675b286a267daf471956a0a53d10792e31
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Regular.otf">
+            <string>Aeonik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SilverPackageCell" id="KGk-i7-Jjw" customClass="SilverPackageCell" customModule="HappyJourney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ah5-fS-kce">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limited Mileage" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="mGU-79-UwX">
+                                <rect key="frame" x="10" y="10" width="98" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="20" id="ifE-Z3-5B9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limited mileage of 300 km/day.maximum 3000 km per rental, Extra mileage is possible and charged locally at 0.60 $/km" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="J9G-uE-luk">
+                                <rect key="frame" x="10" y="35" width="297.5" height="45"/>
+                                <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="J9G-uE-luk" secondAttribute="bottom" constant="10" id="0Y2-x0-bj3"/>
+                            <constraint firstItem="J9G-uE-luk" firstAttribute="leading" secondItem="ah5-fS-kce" secondAttribute="leading" constant="10" id="1BA-yq-VEv"/>
+                            <constraint firstItem="mGU-79-UwX" firstAttribute="top" secondItem="ah5-fS-kce" secondAttribute="top" constant="10" id="1Ng-mK-XDw"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mGU-79-UwX" secondAttribute="trailing" constant="10" id="6ew-Jt-BV9"/>
+                            <constraint firstItem="J9G-uE-luk" firstAttribute="top" secondItem="mGU-79-UwX" secondAttribute="bottom" constant="5" id="D1d-2S-rjV"/>
+                            <constraint firstItem="J9G-uE-luk" firstAttribute="top" secondItem="mGU-79-UwX" secondAttribute="bottom" constant="5" id="FEW-hQ-aZn"/>
+                            <constraint firstItem="mGU-79-UwX" firstAttribute="leading" secondItem="ah5-fS-kce" secondAttribute="leading" constant="10" id="RIT-Cx-BcN"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="J9G-uE-luk" secondAttribute="trailing" constant="10" id="rfg-cg-THR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ah5-fS-kce" secondAttribute="bottom" id="0Dh-AB-fBz"/>
+                    <constraint firstAttribute="trailing" secondItem="ah5-fS-kce" secondAttribute="trailing" id="Pt8-47-0Z3"/>
+                    <constraint firstItem="ah5-fS-kce" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XDE-1a-qLt"/>
+                    <constraint firstItem="ah5-fS-kce" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yCz-7k-NyA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="lbl_description" destination="J9G-uE-luk" id="rfX-d1-uQI"/>
+                <outlet property="lbl_title" destination="mGU-79-UwX" id="qOJ-i7-267"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="153"/>
+        </tableViewCell>
+    </objects>
+</document>

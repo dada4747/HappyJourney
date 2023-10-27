@@ -1,19 +1,20 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Internacia' do
+target 'HappyJourney' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for Internacia
   pod 'SDWebImage'
+  pod 'WARangeSlider'
 
-  target 'InternaciaTests' do
+  target 'HappyJourneyTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'InternaciaUITests' do
+  target 'HappyJourneyUITests' do
     # Pods for testing
   end
 

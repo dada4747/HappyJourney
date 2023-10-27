@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Medium.otf">
+            <string>Aeonik-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Bnu-Xh-hGT" customClass="HomeModulesCVCell" customModule="HappyJourney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="63" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="63" height="89"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeN-sI-Tch">
+                        <rect key="frame" x="0.0" y="0.0" width="63" height="89"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnt-AO-LeC" customClass="GradientView" customModule="HappyJourney" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_flight" translatesAutoresizingMaskIntoConstraints="NO" id="mae-lM-Zgp">
+                                        <rect key="frame" x="14" y="14" width="35" height="35"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Gnv-d4-CIC"/>
+                                            <constraint firstAttribute="width" constant="35" id="TVv-CA-xT1"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mae-lM-Zgp" firstAttribute="centerY" secondItem="lnt-AO-LeC" secondAttribute="centerY" id="ICV-31-KZD"/>
+                                    <constraint firstAttribute="height" constant="63" id="KcI-UZ-itX"/>
+                                    <constraint firstItem="mae-lM-Zgp" firstAttribute="centerX" secondItem="lnt-AO-LeC" secondAttribute="centerX" id="i2d-Hl-NKh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.14901960784313725" green="0.78431372549019607" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.38431372549019605" green="0.7803921568627451" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLIGHTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXB-Rz-PqY">
+                                <rect key="frame" x="0.0" y="72" width="63" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="zHA-ka-9vr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Aeonik-Medium" family="Aeonik" pointSize="10"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotel" translatesAutoresizingMaskIntoConstraints="NO" id="tzz-tw-KNK">
+                                <rect key="frame" x="0.0" y="0.0" width="63" height="89"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dXB-Rz-PqY" secondAttribute="bottom" id="6m1-sZ-rwF"/>
+                            <constraint firstAttribute="trailing" secondItem="tzz-tw-KNK" secondAttribute="trailing" id="8SN-wa-bGO"/>
+                            <constraint firstAttribute="trailing" secondItem="lnt-AO-LeC" secondAttribute="trailing" id="9dE-bW-F9i"/>
+                            <constraint firstItem="tzz-tw-KNK" firstAttribute="top" secondItem="oeN-sI-Tch" secondAttribute="top" id="FxH-LC-K0K"/>
+                            <constraint firstAttribute="bottom" secondItem="tzz-tw-KNK" secondAttribute="bottom" id="Gzf-1J-CBK"/>
+                            <constraint firstItem="tzz-tw-KNK" firstAttribute="leading" secondItem="oeN-sI-Tch" secondAttribute="leading" id="IAC-hh-J5x"/>
+                            <constraint firstItem="dXB-Rz-PqY" firstAttribute="leading" secondItem="oeN-sI-Tch" secondAttribute="leading" id="Q7Q-Vt-taV"/>
+                            <constraint firstItem="lnt-AO-LeC" firstAttribute="leading" secondItem="oeN-sI-Tch" secondAttribute="leading" id="U7d-Ew-SkS"/>
+                            <constraint firstAttribute="trailing" secondItem="dXB-Rz-PqY" secondAttribute="trailing" id="a7z-UK-TwF"/>
+                            <constraint firstItem="lnt-AO-LeC" firstAttribute="top" secondItem="oeN-sI-Tch" secondAttribute="top" id="abg-3c-AyG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tzz-tw-KNK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="AaE-hj-Xe0"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oeN-sI-Tch" secondAttribute="bottom" id="JAP-74-HZo"/>
+                <constraint firstItem="oeN-sI-Tch" firstAttribute="leading" secondItem="Bnu-Xh-hGT" secondAttribute="leading" id="Ys8-ae-j12"/>
+                <constraint firstItem="oeN-sI-Tch" firstAttribute="top" secondItem="Bnu-Xh-hGT" secondAttribute="top" id="imJ-eb-Piv"/>
+                <constraint firstAttribute="trailing" secondItem="oeN-sI-Tch" secondAttribute="trailing" id="oUv-pg-2mz"/>
+            </constraints>
+            <connections>
+                <outlet property="gradientView" destination="lnt-AO-LeC" id="TqN-WW-2ka"/>
+                <outlet property="img_icon" destination="mae-lM-Zgp" id="2Uh-si-lsN"/>
+                <outlet property="lbl_title" destination="dXB-Rz-PqY" id="XEh-GW-IdO"/>
+            </connections>
+            <point key="canvasLocation" x="68.840579710144937" y="95.424107142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="hotel" width="492" height="492"/>
+        <image name="ic_flight" width="25.333333969116211" height="25.333333969116211"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
